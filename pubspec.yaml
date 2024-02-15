@@ -7,33 +7,23 @@ environment:
   sdk: '>=3.1.5 <4.0.0'
 
 dependencies:
-  
+  connectivity_plus: ^5.0.2
   cupertino_icons: ^1.0.2
- 
-
+  dartz: ^0.10.1
+  equatable: ^2.0.5
   flutter:
     sdk: flutter
-  # Bloc for state management
   flutter_bloc: ^8.1.4
-  # Service locator
   get_it: ^7.6.7
-  # Functional programming things
-  dartz: ^0.10.1
-  # Value equality
-  equatable: ^2.0.5
-  # Remote API
-  connectivity_plus: ^5.0.2
-  http: ^1.2.0
-  # Local cache
+  http: ^1.1.0
   shared_preferences: ^2.2.2
 
 dev_dependencies:
- 
+  build_runner: ^2.4.8
+  flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
   mockito: ^5.4.4
-  build_runner: ^2.4.8
-  flutter_lints: ^2.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
