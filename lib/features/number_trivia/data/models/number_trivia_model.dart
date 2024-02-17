@@ -6,4 +6,16 @@ class NumberTriviaModel extends NumberTrivia {
 
   const NumberTriviaModel({required this.textModel, required this.numberModel})
       : super(number: numberModel, text: textModel);
+
+  factory NumberTriviaModel.fromJson(Map<String, dynamic> json) {
+    return NumberTriviaModel(
+        textModel: json['text'], numberModel: json['number']);
+  }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'text': text,
+      'number': number,
+    };
+  }
 }
