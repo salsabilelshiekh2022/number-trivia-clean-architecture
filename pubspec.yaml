@@ -7,7 +7,6 @@ environment:
   sdk: '>=3.1.5 <4.0.0'
 
 dependencies:
-  connectivity_plus: ^5.0.2
   cupertino_icons: ^1.0.2
   dartz: ^0.10.1
   equatable: ^2.0.5
@@ -16,16 +15,16 @@ dependencies:
   flutter_bloc: ^8.1.4
   get_it: ^7.6.7
   http: ^1.1.0
-  shared_preferences: ^2.2.2
+  internet_connection_checker: ^1.0.0+1
   mockito: ^5.4.4
-
+  shared_preferences: ^2.2.2
 
 dev_dependencies:
   build_runner: ^2.4.8
   flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
-  
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 # The following section is specific to Flutter packages.
