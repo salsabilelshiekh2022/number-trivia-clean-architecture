@@ -1,0 +1,9 @@
+import 'package:number_trivia/features/number_trivia/domain/entities/number_trivia.dart';
+
+class NumberTriviaModel extends NumberTrivia {
+  final String textModel;
+  final int numberModel;
+
+  const NumberTriviaModel({required this.textModel, required this.numberModel})
+      : super(number: numberModel, text: textModel);
+}
