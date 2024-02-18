@@ -70,4 +70,45 @@ void main() {
       expect(result, throwsA(const TypeMatcher<ServerException>()));
     });
   });
+  group('get random number trivia ', () {
+    final tNumberTriviaModel =
+        NumberTriviaModel.fromJson(json.decode(fixture('trivia.json')));
+    test('Should perform a get request on url with number being the endpoint',
+        () async {
+      //arrange
+      setupMockHttpClientSuccess200();
+
+      //act
+
+      datasource.getRandomNumberTrivia();
+
+      //assert
+      verify(mockHttpClient.get(Uri.parse('http://numbersapi.com/random'),
+          headers: {'contant-type': 'application/json'}));
+    });
+    test('Should return number trivia model if the responce code is 200',
+        () async {
+      //arrange
+      setupMockHttpClientSuccess200();
+
+      //act
+
+      final result = await datasource.getRandomNumberTrivia();
+
+      //assert
+      expect(result, equals(tNumberTriviaModel));
+    });
+    test('Should return server exception if the responce code is 404 or other',
+        () async {
+      //arrange
+      setupMockHttpClientFailure404();
+
+      //act
+
+      result() async => datasource.getRandomNumberTrivia();
+
+      //assert
+      expect(result, throwsA(const TypeMatcher<ServerException>()));
+    });
+  });
 }
