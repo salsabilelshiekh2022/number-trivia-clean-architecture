@@ -12,10 +12,11 @@ class NumberTriviaRepositoryImpl extends NumberTriviaRepository {
   final NumberTriviaRemoteDatasource remoteDatasource;
   final NetworkInfo networkInfo;
 
-  NumberTriviaRepositoryImpl(
-      {required this.localDatasource,
-      required this.remoteDatasource,
-      required this.networkInfo});
+  NumberTriviaRepositoryImpl({
+    required this.localDatasource,
+    required this.remoteDatasource,
+    required this.networkInfo,
+  });
 
   @override
   Future<Either<Failure, NumberTriviaModel>> getConcreteNumberTrivia(
