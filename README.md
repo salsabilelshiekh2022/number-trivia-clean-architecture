@@ -1,16 +1,19 @@
-# number_trivia
+# Number Trivia Clean Architecture
+- This project depends mainly on TDD (Test Driven Development).
 
-A new Flutter project.
+## 🔌 Packages
+- mockito
+- build_runner
+- flutter_bloc
+- dartz
+- equatable
+- get_it
+- internet_connection_checker
+- shared_preferences
+- http
 
-## Getting Started
+## 📸 ScreenShots
 
-This project is a starting point for a Flutter application.
+<img src="https://github.com/salsabilelshiekh2022/number-trivia-clean-architecture/assets/120952415/a746142b-4148-423c-8174-f0cd11f54faa" alt="Screenshot" style="width: 400px;">
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
